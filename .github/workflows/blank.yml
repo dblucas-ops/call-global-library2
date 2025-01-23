@@ -1,7 +1,6 @@
 name: CI
 on:
  workflow_call:
-    branches: [ "main" ]
 jobs:
   call-global-library:
     uses: dblucas-ops/my-services-simpleone/.github/workflows/mavenCICD.yml@main
