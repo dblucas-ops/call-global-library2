@@ -4,7 +4,7 @@ on:
     branches: [ "main" ]
 jobs:
   call-global-library:
-    uses: dblucas-ops/m-services-simpleone/.github/workflows/mavenCICD.yml@main
+    uses: dblucas-ops/my-services-simpleone/.github/workflows/mavenCICD.yml@main
     with:
       config-path: .github/labeler.yml
     secrets:
