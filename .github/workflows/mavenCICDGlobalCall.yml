@@ -1,4 +1,4 @@
-name: Call Global Libraryc
+name: Call Global Library
 on:
   push:
     branches:
