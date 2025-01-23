@@ -12,7 +12,7 @@ jobs:
   call-global-library:
     uses: dblucas-ops/my-services-simpleone/.github/workflows/mavenCICD.yml@main
     with:
-      repoName: call-global-library
+      repoName: "call-global-library"
       branchName: develop
       buildCmd: mvn
     secrets: inherit
