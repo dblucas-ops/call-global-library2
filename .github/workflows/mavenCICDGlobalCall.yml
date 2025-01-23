@@ -1,6 +1,5 @@
 name: Call Global Library 
 on:
-  workflow_dispatch:  
   push:
     branches:
       - main
