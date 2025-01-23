@@ -14,5 +14,5 @@ jobs:
     with:
       repoName: call-global-library
       branchName: develop
-      buildCmd: mvn install
+      buildCmd: mvn
     secrets: inherit
