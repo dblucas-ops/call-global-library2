@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check for properties file
-        run: ls -al *.properties
+        run: echo "Initialization Section"
   call-global-library:
     uses: dblucas-ops/my-services-simpleone/.github/workflows/mavenCICD.yml@main
     with:
