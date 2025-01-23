@@ -5,6 +5,11 @@ on:
     branches:
       - main
 jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for dockerenv file
+        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)  
   call-global-library:
     uses: dblucas-ops/my-services-simpleone/.github/workflows/mavenCICD.yml@main
     with:
