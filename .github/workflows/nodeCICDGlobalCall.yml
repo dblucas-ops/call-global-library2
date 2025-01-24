@@ -1,4 +1,4 @@
-name: Call Global Library
+name: Call Node Global Library
 on:
   push:
     branches:
@@ -10,10 +10,10 @@ jobs:
       - name: Check for properties file
         run: echo "Initialization Section"
   call-global-library:
-    uses: dblucas-ops/corporate-maven-global-library/.github/workflows/mavenCICD.yml@main
+    uses: dblucas-ops/corporate-node-global-library/.github/workflows/nodeCICD.yml@main
     with:
-      callerRepo: call-global-library
+      callerRepo: call-node-global-library
       branchName: main
-      buildCmd: mvn
+      buildCmd: npm install
     secrets: inherit
 
